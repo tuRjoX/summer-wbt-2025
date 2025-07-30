@@ -1,0 +1,35 @@
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0 5.185rem;
+}
+.intro-content{
+    max-width: 36.5625rem;
+}
+.intro-greetings {
+    font-size: 2.8125rem;
+    font-weight: 600;
+    margin: auto;
+}
+.intro-name {
+    font-size: 5.3125rem;
+    font-weight: 800;
+    margin: auto;
+}
+.intro-description {
+    text-align: justify;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.intro-profile-pic {
+    width: 45.25rem;
+}
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.social-icon:hover {
+    transform: scale(1.1);
+}

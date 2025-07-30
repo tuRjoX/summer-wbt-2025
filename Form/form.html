@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <section class="donor-section">
+    <h2>Donor Information</h2>
+    <form class="donor-info" method="get">
+        <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required>
+        </div>
+        <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required>
+        </div>
+        <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+        </div>
+        <div class="form-group">
+            <label for="address1">Address 1</label>
+            <input type="text" id="address1" name="address1" required>
+        </div>
+        <div class="form-group">
+            <label for="address2">Address 2</label>
+            <input type="text" id="address2" name="address2">
+        </div>
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+            <label for="state">State</label>
+            <select name="state" id="state" required>
+                <option value="">Select State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="zip" required>
+        </div>
+        <div class="form-group" >
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="">Select Country</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="MX">Mexico</option>
+                <option value="GB">United Kingdom</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+                <option value="JP">Japan</option>
+                <option value="CN">China</option>
+                <option value="IN">India</option>
+                <option value="AU">Australia</option>
+                <option value="BR">Brazil</option>
+                <option value="ZA">South Africa</option>
+                <option value="RU">Russia</option>
+                <option value="IT">Italy</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="fax">Fax</label>
+            <input type="tel" id="fax" name="fax">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <!-- Donation Amount Group -->
+        <div class="form-group donation-amount-group">
+            <div class="da-label-block">
+                <label for="donate_amount">Donation Amount</label>
+                <span class="helper-text">(Check a button or type in your amount)</span>
+            </div>
+            <div class="da-radio-block">
+                <input type="radio" id="donate_amount1" name="donate_amount" value="0" checked>
+                <label for="donate_amount1">None</label>
+                <input type="radio" id="donate_amount2" name="donate_amount" value="50">
+                <label for="donate_amount2">$50</label>
+                <input type="radio" id="donate_amount3" name="donate_amount" value="75">
+                <label for="donate_amount3">$75</label>
+                <input type="radio" id="donate_amount4" name="donate_amount" value="100">
+                <label for="donate_amount4">$100</label>
+                <input type="radio" id="donate_amount5" name="donate_amount" value="250">
+                <label for="donate_amount5">$250</label>
+                <input type="radio" id="donate_amount6" name="donate_amount" value="other">
+                <label for="donate_amount6">Other</label>
+            </div>
+        </div>
+        <!-- Other Amount (Separate field, aligned as usual) -->
+        <div class="form-group">
+            <label for="other_amount">Other Amount</label>
+            <input type="text" id="other_amount" name="other_amount">
+        </div>
+        <div class="form-group recurring-donation-group">
+            <div class="rd-label-block">
+                <label for="recurring_donation">Recurring Donation</label>
+                <span class="helper-text">(Check this if yes)</span>
+            </div>
+            <div class="rd-checkbox-block">
+                <input type="checkbox" id="recurring_donation" name="recurring_donation">
+                <span>I am interested in giving on a recurring basis.</span>
+            </div>
+        </div>
+        <div class="form-group monthly-credit-group">
+            <label for="monthly_credit">Monthly Credit Card $</label>
+            <input type="text" id="monthly_credit" name="monthly_credit" style="width:60px;">
+            <label for="monthly_credit_for" class="inline-label">For</label>
+            <input type="text" id="monthly_credit_for" name="monthly_credit_for" style="width:40px;">
+            <label for="month" class="inline-label">Months</label>
+        </div>
+    </form>
+    </section>
+    <section class="honorarium-memorial-section">
+    <h2>Honorarium and Memorial Donation Information</h2>
+    <form class="honorarium-memorial-info" method="get">
+        <div class="form-group honor-radio-group">
+            <label class="align-label" for="">I would like to make this donation</label>
+            <div class="honor-radio-options">
+                <div>
+                    <input type="radio" id="honor" name="honor" value="honor">
+                    <label for="honor">To Honor</label>
+                </div>
+                <div>
+                    <input type="radio" id="memorial" name="honor" value="memorial">
+                    <label for="memorial">In Memory of</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="honor_name">Name</label>
+            <input type="text" id="honor_name" name="honor_name">
+        </div>
+        <div class="form-group">
+            <label for="acknowledge-donation">Acknowledge Donation To</label>
+            <input type="text" id="acknowledge-donation" name="acknowledge-donation">
+        </div>
+        <div class="form-group">
+            <label for="honor_address">Address</label>
+            <input type="text" id="honor_address" name="honor_address">
+        </div>
+        <div class="form-group">
+            <label for="honor_city">City</label>
+            <input type="text" id="honor_city" name="honor_city">
+        </div>
+        <div class="form-group">
+            <label for="honor_state">State</label>
+            <select name="honor_state" id="honor_state">
+                <option value="">Select State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="honor_zip">Zip Code</label>
+            <input type="text" id="honor_zip" name="honor_zip">
+        </div>
+    </form>
+    </section>
+    <section class="additional-info-section">
+        <h2>Additional Information</h2>
+        <p>Please enter your name, company or organization as you would like it to appear in our publications:</p>
+        <form class="additional-info-form" method="get">
+            <div class="form-group">
+                <label for="additional_name">Name</label>
+                <input type="text" id="additional_name" name="additional_name">
+            </div>
+            <div class="form-group inline-checkbox-group">
+                <span>
+                    <input type="checkbox" id="anonymous" name="anonymous">
+                    <label for="anonymous">I would like my gift to remain anonymous.</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="matching_gift" name="matching_gift">
+                    <label for="matching_gift">My employer offers a matching gift program. I will mail the matching gift form.</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="no_thank_you" name="no_thank_you">
+                    <label for="no_thank_you">Please save the cost of acknowledging this gift by not mailing a thank you letter.</label>
+                </span>
+            </div>
+            <div class="form-group">
+                <div class="label-with-helper">
+                    <label for="comments">Comments</label>
+                    <span class="helper-text">(Please type any questions or feedback here)</span>
+                </div>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="contact_method">How may we contact you?</label>
+                <div class="contact-method-group">
+                    <div>
+                        <input type="checkbox" id="email_contact" name="contact_method" value="email">
+                        <label for="email_contact">E-mail</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="postal_mail" name="contact_method" value="postal_mail">
+                        <label for="postal_mail">Postal Mail</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="telephone_contact" name="contact_method" value="telephone_contact">
+                        <label for="telephone_contact">Telephone</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="fax_contact" name="contact_method" value="fax_contact">
+                        <label for="fax_contact">Fax</label>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <label for="newsletter_method">I would like to receive newsletters and information about special events by:</label>
+                <div class="newsletter-checkbox-group">
+                    <div>
+                        <input type="checkbox" id="newsletter_email" name="newsletter_method" value="email">
+                        <label for="newsletter_email">E-mail</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="newsletter_postal" name="newsletter_method" value="postal_mail">
+                        <label for="newsletter_postal">Postal Mail</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="volunteer-info-group">
+                    <input type="checkbox" id="volunteer_info" name="volunteer_info">
+                    <label for="volunteer_info">I would like information about volunteering with the</label>
+                </div>
+            </div>
+            <div>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Continue">
+            </div>
+        </form>
+    </section>
+</body>
+</html

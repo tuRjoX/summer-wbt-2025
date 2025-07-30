@@ -1,0 +1,337 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 20px;
+}
+
+section {
+    width: 800px;
+    margin: 0 auto 25px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: none;
+}
+
+.donor-section h2 {
+    color: #cc0000;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.honorarium-memorial-section h2, 
+.additional-info-section h2 {
+    color: #cc0000;
+    margin-top: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    min-height: 30px;
+}
+
+.form-group label {
+    width: 200px;
+    margin-right: 15px;
+    font-size: 15px;
+    color: #111;
+    font-weight: bold;
+    text-align: right;
+    padding-top: 6px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+select, 
+textarea {
+    width: 300px;
+    font-size: 15px;
+    padding: 6px 8px;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+label[for="first_name"]:after,
+label[for="last_name"]:after,
+label[for="address1"]:after,
+label[for="city"]:after,
+label[for="state"]:after,
+label[for="zip"]:after,
+label[for="country"]:after,
+label[for="email"]:after,
+label[for="donate_amount"]:after{
+    content: '*';
+    color: #c00;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.helper-text {
+    color: #888;
+    font-size: 13px;
+    margin-top: 2px;
+    display: block;
+}
+
+.label-with-helper {
+    width: 200px;
+    margin-right: 15px;
+    text-align: right;
+}
+
+.label-with-helper label {
+    width: auto;
+    margin-right: 0;
+    padding-top: 6px;
+    font-size: 15px;
+    color: #111;
+    font-weight: bold;
+}
+
+.donation-amount-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.da-label-block {
+    width: 200px;
+    margin-right: 15px;
+    text-align: right;
+}
+
+.da-label-block label[for="donate_amount"] {
+    width: auto;
+    margin-right: 0;
+    padding-top: 0;
+}
+
+.da-radio-block {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.da-radio-block input[type="radio"] {
+    margin-right: 5px;
+}
+
+.da-radio-block label {
+    width: auto;
+    margin-right: 0;
+    padding-top: 0;
+    font-weight: normal;
+}
+
+.recurring-donation-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.rd-label-block {
+    width: 200px;
+    margin-right: 15px;
+    text-align: right;
+}
+
+.rd-label-block label {
+    width: auto;
+    margin-right: 0;
+    padding-top: 0;
+}
+
+.rd-checkbox-block {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rd-checkbox-block input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.rd-checkbox-block span {
+    font-weight: normal;
+    color: #111;
+}
+
+.monthly-credit-group {
+    margin-left: 215px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 8px;
+}
+
+.monthly-credit-group label {
+    width: auto;
+    margin-right: 0;
+    font-weight: normal;
+    padding-top: 0;
+}
+
+.monthly-credit-group input[type="text"] {
+    width: 60px;
+    margin-right: 0;
+}
+
+.honor-radio-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.honor-radio-group .align-label {
+    width: 200px;
+    margin-right: 15px;
+    padding-top: 6px;
+}
+
+.honor-radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.honor-radio-options > div {
+    display: flex;
+    align-items: center;
+}
+
+.honor-radio-options input[type="radio"] {
+    margin-right: 5px;
+}
+
+.honor-radio-options label {
+    margin-left: 0;
+    width: auto;
+    font-weight: normal;
+    padding-top: 0;
+}
+
+.additional-info-form p {
+    font-size: 15px;
+    color: #111;
+    margin: 6px 0 12px 0;
+    width: 100%;
+}
+
+.additional-info-form label[for="volunteer_info"] {
+    font-weight: normal;
+    width: auto;
+    margin-right: 10px;
+    color: #111;
+    padding-top: 0;
+}
+
+.additional-info-form input[type="checkbox"] {
+    margin-left: 0;
+    margin-right: 3px;
+    width: auto;
+}
+
+.inline-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.inline-checkbox-group span {
+    display: flex;
+    align-items: center;
+}
+
+.inline-checkbox-group label {
+    margin-left: 4px;
+    margin-right: 0;
+    width: auto;
+    font-weight: normal;
+    font-size: 15px;
+    color: #222;
+    padding-top: 0;
+}
+
+.contact-method-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-method-group > div {
+    display: flex;
+    align-items: center;
+}
+
+.contact-method-group label {
+    margin-left: 3px;
+    margin-bottom: 0;
+    width: auto;
+    padding-top: 0;
+    font-weight: normal;
+}
+
+.newsletter-checkbox-group {
+    margin-left: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.newsletter-checkbox-group > div {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-checkbox-group label {
+    margin-left: 3px;
+    width: auto;
+    padding-top: 0;
+}
+
+.volunteer-info-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#comments {
+    width: 300px;
+    height: 50px;
+    margin-left: 0;
+    text-align: left;
+    resize: none;
+    margin-top: 0;
+}
+
+input[type="reset"],
+input[type="submit"] {
+    width: auto;
+    padding: 8px 20px;
+    margin: 0 0 0 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #007cba;
+    color: white;
+    border-color: #007cba;
+}

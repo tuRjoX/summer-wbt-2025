@@ -1,0 +1,30 @@
+/* Education */
+.education-section {
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+.education-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: auto;
+    text-align: center;
+}
+.education-card{
+    display: flex;
+    border: 2px solid #FD6E0A;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+.education-card:hover {
+    box-shadow: 0 8px 20px rgba(253, 110, 10, 0.3);
+    transform: scale(1.02);
+
+}
+.education-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
