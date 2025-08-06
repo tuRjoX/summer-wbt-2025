@@ -51,7 +51,7 @@ function ask() {
             alert("No partnership type provided.");
         }
     } else if (reason === "OTHER") {
-        var msg7 = "Please describe your reason for contacting us:";
+        var msg7 = "Please describe your reason for contacting us.";
         var otherReason = prompt(msg7);
         alert("Thank you for reaching out. We will review your message.");
     } else {
