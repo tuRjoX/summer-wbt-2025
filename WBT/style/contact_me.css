@@ -13,12 +13,6 @@
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
-
-.contact-section p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    color: #444;
-}
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -31,7 +25,7 @@ label {
     margin-bottom: 0.25rem;
 }
 
-input, textarea {
+input, textarea , select {
     padding: 14px 16px;
     font-size: 1rem;
     border-radius: 8px;

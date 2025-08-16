@@ -34,14 +34,62 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
+                <label for="mobile">Mobile</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+                <label for="job">Which type of job are you interested in?</label>
+                <select name="job-type" id="job-type" required>
+                    <option value="">Select Job Type</option>
+                    <option value="soft_dev">Software Developer</option>
+                    <option value="ux_ui_designer">UX/UI Designer</option>
+                    <option value="data_analyst">Data Analyst</option>
+                    <option value="database_admin">Database Administrator</option>
+                </select>
+
+                <label for="support">What type of support do you need?</label>
+                <select name="support-type" id="support-type" required>
+                    <option value="">Select Support Type</option>
+                    <option value="technical">Technical</option>
+                    <option value="career">Career</option>
+                    <option value="mentorship">Mentorship</option>
+                    <option value="general_inquiry">General Inquiry</option>
+                </select>
+
+                <label for="partnership">What type of partnership are you interested in?</label>
+                <select name="partnership-type" id="partnership-type" required>
+                    <option value="">Select Partnership Type</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="consulting">Consulting</option>
+                    <option value="strategic_partnership">Strategic Partnership</option>
+                    <option value="business_collaboration">Business Collaboration</option>
+                    <option value="affiliate">Affiliate</option>
+                </select>
+
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
-
                 <button type="submit" class="btn">Submit</button>
             </form>
         </section>
     <footer>
         <p class="open-sans dark3">&copy; 2025 All Rights Reserved by Turjo Das Dip</p>
     </footer>
+    <script src="../data/validation.js"></script>
+    <script>
+    document.querySelector('.contact-form').onsubmit = function(e) {
+        e.preventDefault();
+        const data = {
+            name: document.getElementById('name').value,
+            subject: document.getElementById('subject').value,
+            email: document.getElementById('email').value,
+            mobile: document.getElementById('mobile').value,
+            jobType: document.getElementById('job-type').value,
+            supportType: document.getElementById('support-type').value,
+            partnershipType: document.getElementById('partnership-type').value,
+            message: document.getElementById('message').value
+        };
+        saveContactData(data);
+        window.location.href = 'login.html';
+    };
+    </script>
 </body>
 </html>

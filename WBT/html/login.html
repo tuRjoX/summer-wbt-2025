@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../data/validation.js"></script>
+</head>
+<body>
+    <main id="main-content">
+    </main>
+    <script>
+    window.onload = function() {
+        var username = prompt('Enter your username:');
+        var password = prompt('Enter your password:');
+        if (checkLogin(username, password)) {
+            const data = getContactData();
+            console.log('Contact Form Data:', data);
+            alert('Login successful! Check the browser console and page for your submitted data.');
+            // Show data on the page
+            var main = document.getElementById('main-content');
+            if (data) {
+                var html = '<h2>Your Submitted Data</h2><ul>';
+                for (var key in data) {
+                    html += '<li><strong>' + key + ':</strong> ' + data[key] + '</li>';
+                }
+                html += '</ul>';
+                main.innerHTML = html;
+            } else {
+                main.innerHTML = '<p>No contact form data found.</p>';
+            }
+        } else {
+            alert('Invalid username or password!');
+            window.location.reload();
+        }
+    };
+    </script>
+</body>
+</html>
