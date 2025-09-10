@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #333;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #333;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo-container img {
+    height: 40px;
+    margin-right: 10px;
+}
+.nav-links a {
+    margin: 0 10px;
+}
+main {
+    padding-top: 15%;
+    padding-bottom: 15%
+}
+footer {
+    text-align: center;
+    border: 2px solid #333;
+}
+form {
+    margin: 0 auto;
+    padding: 20px;
+}
+.form-row {
+    display: flex;
+    align-items: left;
+    margin-bottom: 12px;
+}
+
+label {
+    width: 160px;
+    margin-bottom: 0;
+    margin-right: 16px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="radio"] {
+    padding: 8px;
+    border-radius: 4px;
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.error {color: #FF0000;}
