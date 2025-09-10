@@ -79,9 +79,9 @@
             <h1>Company</h1>
         </div>
         <div class="nav-links">
-            <a href="index.html">Home</a> |
-            <a href="about.html">Login</a> |
-            <a href="contact.html">Registration</a>
+            <a href="../index.php">Home</a> |
+            <a href="login.php">Login</a> |
+            <a href="registration.php">Registration</a>
         </div>
     </nav>
     <main>
